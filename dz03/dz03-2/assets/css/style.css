@@ -1,0 +1,22 @@
+.calculator-div {
+    border: 1px solid #282828;
+    padding: 3em;
+    text-align: center !important;
+}
+
+input {
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.option-div {
+    display: inline-flex;
+}
+
+.option-div button {
+    padding: 1em;
+    margin: 1em;
+}
