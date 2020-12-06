@@ -26,13 +26,19 @@
         <div class="form-group">
             <input type="text" #title class="form-control" placeholder="Naziv sobe">
         </div>
-
     </form>
 
     <input [(ngModel)]="text" class="form-control" placeholder="Pretrazi">
     <button class="btn btn-primary" (click)="addRoom(title)">Submit</button>
 </div>
 
-<div class="continer">
-    <h5 *ngFor="let room of listOfRooms| filter:text">{{room.title}}</h5>
+<div class="container" *ngFor="let room of listOfRooms| filter:text">
+
+    <div style="display: inline-flex; margin-top: 2em;">
+        <h5>{{room.title}}</h5>
+
+        <div style="margin-left: 2em;">
+            <button class="btn btn-danger" (click)="delete(room)">Obriši</button>
+        </div>
+    </div>
 </div>

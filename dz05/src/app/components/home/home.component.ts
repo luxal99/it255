@@ -18,6 +18,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  delete(item){
+    this.listOfRooms.splice(this.listOfRooms.indexOf(item),1)
+  }
   addRoom(title:HTMLInputElement){
     
     if (title.value !== '') {
